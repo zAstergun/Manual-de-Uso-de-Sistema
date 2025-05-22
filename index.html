@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manual de Uso do Sistema</title>
+    <title>Guia de Uso do Sistema</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
@@ -15,9 +15,9 @@
         class="container mx-auto flex flex-col md:flex-row items-center justify-between"
       >
         <h1 class="text-4xl font-extrabold mb-2 md:mb-0">
-          <span class="block">Manual de Uso do Sistema</span>
+          <span class="block">Guia de Uso do Sistema</span>
           <span class="block text-xl opacity-80"
-            >Ultrafarma Brasilândia</span
+            >Ultrafarma</span
           >
         </h1>
         <nav>
@@ -76,28 +76,35 @@
                   <a
                     href="#abertura-sistema"
                     class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
-                    >Abertura do Sistema</a
+                    >Abertura do Sistema [CAIXA]</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#venda-medicamentos"
+                    href="#finalizar-entregas"
                     class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
-                    >Venda de Medicamentos</a
+                    >Finalizar entregas [CAIXA]</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#controle-estoque"
+                    href="#ifood"
                     class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
-                    >Controle de Estoque</a
+                    >IFOOD</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#farmacias-app"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Farmácias APP</a
                   >
                 </li>
                 <li>
                   <a
                     href="#fechamento-caixa"
                     class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
-                    >Fechamento do Caixa</a
+                    >Fechamento [CAIXA]</a
                   >
                 </li>
               </ul>
@@ -163,19 +170,18 @@
       <main class="w-full md:w-3/4 lg:w-4/5 pl-4 md:pl-8">
         <section id="home" class="mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">
-            Bem-vindo ao Manual de Uso do Sistema!
+            Bem-vindo ao Guia de Uso do Sistema!
           </h2>
           <p class="text-gray-700 leading-relaxed mb-4">
             Este é o seu guia centralizado para todos os procedimentos, rotinas
-            e informações essenciais da nossa farmácia. Nosso objetivo é
+            e informações essenciais da nossa farmácia. O meu objetivo é
             garantir que todos tenham acesso rápido e fácil às informações
             necessárias para desempenhar suas funções com excelência.
           </p>
           <p class="text-gray-700 leading-relaxed">
             Utilize o menu de navegação à esquerda (ou na parte superior em
             dispositivos móveis) para explorar as diferentes seções. Em caso de
-            dúvidas ou sugestões de melhoria para a wiki, por favor, entre em
-            contato com a equipe de gestão.
+            dúvidas ou sugestões de melhoria para o Guia, por favor, entre em contato comigo na seção de Contato e Suporte.
           </p>
           <div
             class="mt-8 p-6 bg-[#fff9db] border-l-4 border-[#FFD200] rounded-lg shadow-sm"
@@ -228,20 +234,8 @@
               <li>Inserir o troco/fundo de caixa como <span class="font-bold">0</span>.</li>
             </ol>
             <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
-              <h4 class="text-lg font-medium text-gray-800 mb-2">
-                Fluxograma: Processo de Login no Sistema
-              </h4>
-              <p class="text-gray-600 text-sm mb-2">
-                <a
-                  href="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Login"
-                  target="_blank"
-                  class="text-[#002776] hover:underline"
-                >
-                  [Clique para ver o fluxograma de login]
-                </a>
-              </p>
               <img
-                src="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Login"
+                src="images/Fluxograma Abertura Caixa.svg"
                 alt="Fluxograma de Login no Sistema"
                 class="w-full h-auto rounded-md object-cover"
               />
@@ -253,87 +247,91 @@
           </article>
 
           <article
-            id="venda-medicamentos"
+            id="finalizar-entregas"
             class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
           >
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-              1.2. Venda de Medicamentos e Produtos
+              1.2. Finalizar Entregas
             </h3>
             <p class="text-gray-700 leading-relaxed mb-4">
-              Procedimento para registrar vendas, aplicar descontos e gerenciar
-              pagamentos.
+              Procedimento para realizar o fechamento das entregas, criação de romaneio, devolução de entrega e afins.
             </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-              <li>Escanear o código de barras do produto.</li>
-              <li>Verificar a validade e o lote do medicamento.</li>
-              <li>
-                Consultar o CPF do cliente para programas de fidelidade ou
-                descontos.
-              </li>
-              <li>Aplicar descontos conforme política da farmácia.</li>
-              <li>Selecionar a forma de pagamento (dinheiro, cartão, pix).</li>
-              <li>Finalizar a venda e emitir o cupom fiscal.</li>
-            </ul>
+            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
+              <li><b>CTRL + F3</b> para criar o romaneio das entregas.</li>
+              <p>Após aparecer o <b>MENU</b> você deve informar o número da venda que será criado o romaneio, se não souber qual é, ele é mostrado no <b>CTRL + F5.</b></p>
+              <li><b>CTRL + F4</b> para selecionar qual o romaneio irá ser dado baixa.</li>
+              <p>O número do romaneio pode ser consultado no papel que foi impresso no primeiro passo e também através do <b>CTRL + F5</b>.</p>
+              <li><b>Devolução</b></li>
+              <p>Caso a entrega não tenha sido feita, não há necessidade de colocar valor algum, apenas informar <b>D</b> (devolução) para o produto voltar para a loja.</p>
+              <li><b>Procedimentos Específicos</b></li>
+              <p><b>IFOOD</b> e <b>FARMÁCIAS APP</b></p>
+              <p>Requerem procedimentos específicos, então foram criados tópicos somente para eles.</p>
+            </ol>
             <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
-              <h4 class="text-lg font-medium text-gray-800 mb-2">
-                Exemplo: Tela de Venda no Sistema
-              </h4>
-              <p class="text-gray-600 text-sm mb-2">
-                <a
-                  href="https://placehold.co/600x350/e0f2fe/0284c7?text=Tela+Venda+Sistema"
-                  target="_blank"
-                  class="text-[#002776] hover:underline"
-                >
-                  [Clique para ver a imagem da tela de venda]
-                </a>
-              </p>
               <img
-                src="https://placehold.co/600x350/e0f2fe/0284c7?text=Tela+Venda+Sistema"
-                alt="Tela de Venda do Sistema"
+                src="images/Finalizar Entrega.svg"
+                alt="Fluxograma de finalização de entrega"
                 class="w-full h-auto rounded-md object-cover"
               />
             </div>
             <p class="text-gray-700 leading-relaxed italic text-sm">
-              Atenção à legislação para venda de medicamentos controlados.
+              Atenção à finalização das entregas e a autorização de cada uma.
             </p>
           </article>
 
           <article
-            id="controle-estoque"
+            id="ifood"
             class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
           >
             <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-              1.3. Controle de Estoque
+              1.3. IFOOD
             </h3>
             <p class="text-gray-700 leading-relaxed mb-4">
-              Instruções para consultar, adicionar e remover itens do estoque no
-              sistema.
+              Instruções para como lidar com o sistema de pedidos do IFOOD.
             </p>
+            <p class="text-gray-700 leading-relaxed italic text-sm">
+              Importante ressaltar que detalhes como "como separo o ifood no balcão" não serão mencionados, pois presumo que isso já foi ensinado em loja".
+            </p><br>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
-              <li>Acessar o módulo de estoque no sistema.</li>
+              <li>O pedido do Ifood <b>deve</b> ser impresso.</li>
               <li>
-                Realizar a entrada de novos produtos com base na nota fiscal.
+                Quando o motoboy for levar a entrega ele <b>deve</b> assinar o papel que foi impresso do pedido.
               </li>
-              <li>Registrar baixas por venda, perda ou descarte.</li>
-              <li>Realizar inventários periódicos e ajustes no sistema.</li>
-              <li>Gerar relatórios de estoque mínimo e máximo.</li>
+              <li>Na finalização de entrega como Ifood é necessário informar o número do pedido do Ifood como autorização.</li>
+              <li>O comprovante do pedido assinado pelo motoboy deve ser guardado junto ao fechamento do caixa.</li>
             </ul>
             <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
-              <h4 class="text-lg font-medium text-gray-800 mb-2">
-                Fluxograma: Processo de Entrada de Estoque
-              </h4>
-              <p class="text-gray-600 text-sm mb-2">
-                <a
-                  href="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Entrada+Estoque"
-                  target="_blank"
-                  class="text-[#002776] hover:underline"
-                >
-                  [Clique para ver o fluxograma de entrada de estoque]
-                </a>
-              </p>
               <img
-                src="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Entrada+Estoque"
-                alt="Fluxograma de Entrada de Estoque"
+                src="images/Ifood.svg"
+                alt="Fluxograma de funcionamneto do IFOOD"
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
+          </article>
+
+          <article
+            id="farmacias-app"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              1.4. Farmácias APP
+            </h3>
+             <p class="text-gray-700 leading-relaxed mb-4">
+              Instruções para como lidar com o sistema de pedidos do Farmácias APP.
+            </p>
+            <p class="text-gray-700 leading-relaxed italic text-sm">
+              Importante ressaltar que detalhes como "como separo o Farmácias APP no balcão" não serão mencionados, pois presumo que isso já foi ensinado em loja".
+            </p><br>
+            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
+              <li>O pedido do Farmácias APP <b>deve</b> ser impresso.</li>
+              <li>Quando o motoboy for levar a entrega ele <b>deve</b> assinar o papel que foi impresso do pedido.</li>
+              <li>Na finalização de entrega como Farmácias APP é necessário informar a sequência de letras e números do pedido do Farmácias APP como autorização.</li>
+              <li>O comprovante do pedido assinado pelo motoboy deve ser guardado junto ao fechamento do caixa.</li>
+            </ol>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <img
+                src="images/Farmacias APP.svg"
+                alt="Fluxograma de funcionamneto do Farmáscias APP"
                 class="w-full h-auto rounded-md object-cover"
               />
             </div>
@@ -351,16 +349,22 @@
             </p>
             <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
               <li>Contar o dinheiro físico no caixa.</li>
-              <li>Verificar os comprovantes de cartão e pix.</li>
-              <li>Acessar o módulo de fechamento de caixa no sistema.</li>
-              <li>Inserir os valores contados e comparar com o sistema.</li>
+              <li>Verificar os comprovantes de cartão, pix, ifood, convênios e farmácias app.</li>
+              <li>Fazer a sangria de todo o valor que não seja o fundo do caixa.</li>
               <li>Registrar quaisquer divergências e reportar ao gerente.</li>
-              <li>Gerar o relatório de fechamento.</li>
+              <li>Gerar o relatório de fechamento do caixa.</li>
             </ol>
             <p class="text-gray-700 leading-relaxed italic text-sm">
               O fechamento deve ser feito com atenção redobrada para evitar
               erros.
             </p>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <img
+                src="images/Fechamento Caixa.svg"
+                alt="Fluxograma do Fechamento do Caixa"
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
           </article>
         </section>
 
@@ -398,28 +402,13 @@
                 Separar produtos que necessitam de refrigeração imediatamente.
               </li>
               <li>
-                Registrar a entrada no sistema de estoque (conforme item 1.3).
-              </li>
-              <li>
                 Armazenar os produtos nos locais designados, seguindo as boas
                 práticas.
               </li>
             </ul>
             <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
-              <h4 class="text-lg font-medium text-gray-800 mb-2">
-                Imagem: Área de Recebimento
-              </h4>
-              <p class="text-gray-600 text-sm mb-2">
-                <a
-                  href="https://placehold.co/600x350/e0f2fe/0284c7?text=Area+Recebimento"
-                  target="_blank"
-                  class="text-[#002776] hover:underline"
-                >
-                  [Clique para ver a imagem da área de recebimento]
-                </a>
-              </p>
               <img
-                src="https://placehold.co/600x350/e0f2fe/0284c7?text=Area+Recebimento"
+                src="images/Recebimento e Conferencias.svg"
                 alt="Área de Recebimento de Mercadorias"
                 class="w-full h-auto rounded-md object-cover"
               />
@@ -437,6 +426,9 @@
               Diretrizes para manter a farmácia limpa, organizada e com produtos
               bem expostos.
             </p>
+            <p class="text-gray-700 leading-relaxed italic text-sm">
+              Importante lembrar que cada pessoa tem sua própria seção da loja para cuidar.
+            </p> <br>
             <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
               <li>Limpeza diária de balcões, prateleiras e pisos.</li>
               <li>
@@ -449,20 +441,8 @@
               </li>
             </ul>
             <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
-              <h4 class="text-lg font-medium text-gray-800 mb-2">
-                Fluxograma: Rotina de Organização Diária
-              </h4>
-              <p class="text-gray-600 text-sm mb-2">
-                <a
-                  href="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Organizacao+Diaria"
-                  target="_blank"
-                  class="text-[#002776] hover:underline"
-                >
-                  [Clique para ver o fluxograma de organização diária]
-                </a>
-              </p>
               <img
-                src="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Organizacao+Diaria"
+                src="images/Organização e Limpeza da Loja.svg"
                 alt="Fluxograma de Rotina de Organização Diária"
                 class="w-full h-auto rounded-md object-cover"
               />
@@ -496,6 +476,13 @@
             <p class="text-gray-700 leading-relaxed italic text-sm">
               Lembre-se: um bom atendimento fideliza o cliente.
             </p>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <img
+                src="images/Atendimento ao Cliente.svg"
+                alt="Fluxograma de Atendimento ao Cliente"
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
           </article>
 
           <article
@@ -524,6 +511,13 @@
             <p class="text-gray-700 leading-relaxed italic text-sm">
               O descarte incorreto pode gerar multas e danos ambientais.
             </p>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <img
+                src="images/Descarte de Residuos e Medicamentos Vencidos.svg"
+                alt="Fluxograma de Descarte de Resíduos e Medicamentos Vencidos."
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
           </article>
         </section>
 
