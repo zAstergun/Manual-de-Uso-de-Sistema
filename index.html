@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual de Uso do Sistema</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header class="bg-[#002776] text-white p-6 shadow-lg rounded-b-lg">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center justify-between"
+      >
+        <h1 class="text-4xl font-extrabold mb-2 md:mb-0">
+          <span class="block">Manual de Uso do Sistema</span>
+          <span class="block text-xl opacity-80"
+            >Ultrafarma Brasilândia</span
+          >
+        </h1>
+        <nav>
+          <ul class="flex space-x-6 text-lg">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-[#FFD200] transition duration-300"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="#procedimentos-sistema"
+                class="hover:text-[#FFD200] transition duration-300"
+                >Sistema</a
+              >
+            </li>
+            <li>
+              <a
+                href="#rotinas-operacionais"
+                class="hover:text-[#FFD200] transition duration-300"
+                >Rotinas</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contato"
+                class="hover:text-[#FFD200] transition duration-300"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      class="flex flex-1 container mx-auto mt-8 p-4 md:p-6 bg-white shadow-xl rounded-lg"
+    >
+      <aside
+        class="w-full md:w-1/4 lg:w-1/5 pr-4 md:pr-8 border-r border-gray-200 hidden md:block"
+      >
+        <nav class="sticky top-8">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-6">Navegação</h2>
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="#procedimentos-sistema"
+                class="nav-link block p-3 rounded-md text-gray-700 hover:bg-[#fff9db] hover:text-[#002776] transition duration-200"
+              >
+                <span class="font-medium">Procedimentos de Sistema</span>
+              </a>
+              <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600">
+                <li>
+                  <a
+                    href="#abertura-sistema"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Abertura do Sistema</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#venda-medicamentos"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Venda de Medicamentos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#controle-estoque"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Controle de Estoque</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#fechamento-caixa"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Fechamento do Caixa</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#rotinas-operacionais"
+                class="nav-link block p-3 rounded-md text-gray-700 hover:bg-[#fff9db] hover:text-[#002776] transition duration-200"
+              >
+                <span class="font-medium">Rotinas Operacionais</span>
+              </a>
+              <ul class="ml-4 mt-2 space-y-2 text-sm text-gray-600">
+                <li>
+                  <a
+                    href="#recebimento-mercadorias"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Recebimento de Mercadorias</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#organizacao-loja"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Organização da Loja</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#atendimento-cliente"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Atendimento ao Cliente</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#descarte-residuos"
+                    class="block p-2 rounded-md hover:bg-[#fff9db] hover:text-gray-800 transition duration-200"
+                    >Descarte de Resíduos</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#documentos-importantes"
+                class="nav-link block p-3 rounded-md text-gray-700 hover:bg-[#fff9db] hover:text-[#002776] transition duration-200"
+              >
+                <span class="font-medium">Documentos Importantes</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contato"
+                class="nav-link block p-3 rounded-md text-gray-700 hover:bg-[#fff9db] hover:text-[#002776] transition duration-200"
+              >
+                <span class="font-medium">Contato e Suporte</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="w-full md:w-3/4 lg:w-4/5 pl-4 md:pl-8">
+        <section id="home" class="mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">
+            Bem-vindo ao Manual de Uso do Sistema!
+          </h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            Este é o seu guia centralizado para todos os procedimentos, rotinas
+            e informações essenciais da nossa farmácia. Nosso objetivo é
+            garantir que todos tenham acesso rápido e fácil às informações
+            necessárias para desempenhar suas funções com excelência.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Utilize o menu de navegação à esquerda (ou na parte superior em
+            dispositivos móveis) para explorar as diferentes seções. Em caso de
+            dúvidas ou sugestões de melhoria para a wiki, por favor, entre em
+            contato com a equipe de gestão.
+          </p>
+          <div
+            class="mt-8 p-6 bg-[#fff9db] border-l-4 border-[#FFD200] rounded-lg shadow-sm"
+          >
+            <h3 class="text-xl font-semibold text-[#002776] mb-3">
+              Dica Rápida:
+            </h3>
+            <p class="text-[#002776]">
+              Use a função de busca do seu navegador (Ctrl+F ou Cmd+F) para
+              encontrar rapidamente termos específicos dentro de qualquer
+              página.
+            </p>
+          </div>
+        </section>
+
+        <section id="procedimentos-sistema" class="mb-12 pt-10">
+          <h2
+            class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-2 border-[#FFD200]"
+          >
+            1. Procedimentos de Sistema
+          </h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Esta seção detalha os passos para a utilização dos sistemas internos
+            da farmácia, desde a abertura até o fechamento.
+          </p>
+
+          <article
+            id="abertura-sistema"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              1.1. Abertura do Sistema e Login
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Guia passo a passo para iniciar o sistema operacional e de vendas
+              no início do turno.
+            </p>
+            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
+              <li>
+                Ligar o computador e periféricos (impressora, leitor de código
+                de barras).
+              </li>
+              <li>Aguardar o carregamento completo do sistema operacional.</li>
+              <li>Clicar no ícone do sistema PDV na área de trabalho.</li>
+              <li>
+                Inserir seu <span class="font-bold">usuário</span> e
+                <span class="font-bold">senha</span> nos campos indicados.
+              </li>
+              <li>Aguardar o Supervisor inserir o <span class="font-bold">usuário</span> e <span class="font-bold">senha</span>.</li>
+              <li>Inserir o troco/fundo de caixa como <span class="font-bold">0</span>.</li>
+            </ol>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <h4 class="text-lg font-medium text-gray-800 mb-2">
+                Fluxograma: Processo de Login no Sistema
+              </h4>
+              <p class="text-gray-600 text-sm mb-2">
+                <a
+                  href="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Login"
+                  target="_blank"
+                  class="text-[#002776] hover:underline"
+                >
+                  [Clique para ver o fluxograma de login]
+                </a>
+              </p>
+              <img
+                src="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Login"
+                alt="Fluxograma de Login no Sistema"
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
+            <p class="text-gray-700 leading-relaxed italic text-sm">
+              Em caso de problemas de login, contatar o suporte técnico
+              imediatamente.
+            </p>
+          </article>
+
+          <article
+            id="venda-medicamentos"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              1.2. Venda de Medicamentos e Produtos
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Procedimento para registrar vendas, aplicar descontos e gerenciar
+              pagamentos.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>Escanear o código de barras do produto.</li>
+              <li>Verificar a validade e o lote do medicamento.</li>
+              <li>
+                Consultar o CPF do cliente para programas de fidelidade ou
+                descontos.
+              </li>
+              <li>Aplicar descontos conforme política da farmácia.</li>
+              <li>Selecionar a forma de pagamento (dinheiro, cartão, pix).</li>
+              <li>Finalizar a venda e emitir o cupom fiscal.</li>
+            </ul>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <h4 class="text-lg font-medium text-gray-800 mb-2">
+                Exemplo: Tela de Venda no Sistema
+              </h4>
+              <p class="text-gray-600 text-sm mb-2">
+                <a
+                  href="https://placehold.co/600x350/e0f2fe/0284c7?text=Tela+Venda+Sistema"
+                  target="_blank"
+                  class="text-[#002776] hover:underline"
+                >
+                  [Clique para ver a imagem da tela de venda]
+                </a>
+              </p>
+              <img
+                src="https://placehold.co/600x350/e0f2fe/0284c7?text=Tela+Venda+Sistema"
+                alt="Tela de Venda do Sistema"
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
+            <p class="text-gray-700 leading-relaxed italic text-sm">
+              Atenção à legislação para venda de medicamentos controlados.
+            </p>
+          </article>
+
+          <article
+            id="controle-estoque"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              1.3. Controle de Estoque
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Instruções para consultar, adicionar e remover itens do estoque no
+              sistema.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>Acessar o módulo de estoque no sistema.</li>
+              <li>
+                Realizar a entrada de novos produtos com base na nota fiscal.
+              </li>
+              <li>Registrar baixas por venda, perda ou descarte.</li>
+              <li>Realizar inventários periódicos e ajustes no sistema.</li>
+              <li>Gerar relatórios de estoque mínimo e máximo.</li>
+            </ul>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <h4 class="text-lg font-medium text-gray-800 mb-2">
+                Fluxograma: Processo de Entrada de Estoque
+              </h4>
+              <p class="text-gray-600 text-sm mb-2">
+                <a
+                  href="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Entrada+Estoque"
+                  target="_blank"
+                  class="text-[#002776] hover:underline"
+                >
+                  [Clique para ver o fluxograma de entrada de estoque]
+                </a>
+              </p>
+              <img
+                src="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Entrada+Estoque"
+                alt="Fluxograma de Entrada de Estoque"
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
+          </article>
+
+          <article
+            id="fechamento-caixa"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              1.4. Fechamento do Caixa
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Passos para o fechamento diário do caixa e conciliação de valores.
+            </p>
+            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
+              <li>Contar o dinheiro físico no caixa.</li>
+              <li>Verificar os comprovantes de cartão e pix.</li>
+              <li>Acessar o módulo de fechamento de caixa no sistema.</li>
+              <li>Inserir os valores contados e comparar com o sistema.</li>
+              <li>Registrar quaisquer divergências e reportar ao gerente.</li>
+              <li>Gerar o relatório de fechamento.</li>
+            </ol>
+            <p class="text-gray-700 leading-relaxed italic text-sm">
+              O fechamento deve ser feito com atenção redobrada para evitar
+              erros.
+            </p>
+          </article>
+        </section>
+
+        <section id="rotinas-operacionais" class="mb-12 pt-10">
+          <h2
+            class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-2 border-[#FFD200]"
+          >
+            2. Rotinas Operacionais
+          </h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Esta seção descreve as rotinas diárias e periódicas para a
+            manutenção da farmácia e o atendimento ao cliente.
+          </p>
+
+          <article
+            id="recebimento-mercadorias"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              2.1. Recebimento e Conferência de Mercadorias
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Procedimento para receber, conferir e armazenar produtos dos
+              fornecedores.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>
+                Verificar a integridade das embalagens no momento da entrega.
+              </li>
+              <li>
+                Conferir a nota fiscal com os produtos recebidos (quantidade,
+                tipo, lote, validade).
+              </li>
+              <li>
+                Separar produtos que necessitam de refrigeração imediatamente.
+              </li>
+              <li>
+                Registrar a entrada no sistema de estoque (conforme item 1.3).
+              </li>
+              <li>
+                Armazenar os produtos nos locais designados, seguindo as boas
+                práticas.
+              </li>
+            </ul>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <h4 class="text-lg font-medium text-gray-800 mb-2">
+                Imagem: Área de Recebimento
+              </h4>
+              <p class="text-gray-600 text-sm mb-2">
+                <a
+                  href="https://placehold.co/600x350/e0f2fe/0284c7?text=Area+Recebimento"
+                  target="_blank"
+                  class="text-[#002776] hover:underline"
+                >
+                  [Clique para ver a imagem da área de recebimento]
+                </a>
+              </p>
+              <img
+                src="https://placehold.co/600x350/e0f2fe/0284c7?text=Area+Recebimento"
+                alt="Área de Recebimento de Mercadorias"
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
+          </article>
+
+          <article
+            id="organizacao-loja"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              2.2. Organização e Limpeza da Loja
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Diretrizes para manter a farmácia limpa, organizada e com produtos
+              bem expostos.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>Limpeza diária de balcões, prateleiras e pisos.</li>
+              <li>
+                Organização dos produtos por categoria e ordem alfabética.
+              </li>
+              <li>Verificação e reposição de produtos nas gôndolas.</li>
+              <li>Descarte correto de embalagens e lixo.</li>
+              <li>
+                Manutenção da área de atendimento ao cliente sempre impecável.
+              </li>
+            </ul>
+            <div class="bg-white p-4 rounded-md border border-gray-200 mb-4">
+              <h4 class="text-lg font-medium text-gray-800 mb-2">
+                Fluxograma: Rotina de Organização Diária
+              </h4>
+              <p class="text-gray-600 text-sm mb-2">
+                <a
+                  href="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Organizacao+Diaria"
+                  target="_blank"
+                  class="text-[#002776] hover:underline"
+                >
+                  [Clique para ver o fluxograma de organização diária]
+                </a>
+              </p>
+              <img
+                src="https://placehold.co/600x300/e0f2fe/0284c7?text=Fluxograma+Organizacao+Diaria"
+                alt="Fluxograma de Rotina de Organização Diária"
+                class="w-full h-auto rounded-md object-cover"
+              />
+            </div>
+          </article>
+
+          <article
+            id="atendimento-cliente"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              2.3. Atendimento ao Cliente
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Boas práticas para um atendimento de excelência, com foco na
+              satisfação do cliente.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+              <li>Receber o cliente com um sorriso e saudação.</li>
+              <li>Ouvir atentamente as necessidades do cliente.</li>
+              <li>
+                Oferecer informações claras e precisas sobre produtos e
+                serviços.
+              </li>
+              <li>Auxiliar na localização de produtos na loja.</li>
+              <li>
+                Resolver dúvidas e problemas de forma eficiente e cordial.
+              </li>
+              <li>Agradecer a preferência e convidar a retornar.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed italic text-sm">
+              Lembre-se: um bom atendimento fideliza o cliente.
+            </p>
+          </article>
+
+          <article
+            id="descarte-residuos"
+            class="bg-gray-50 p-6 rounded-lg shadow-sm mb-8"
+          >
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              2.4. Descarte de Resíduos e Medicamentos Vencidos
+            </h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+              Orientações para o descarte correto de lixo comum, recicláveis e
+              medicamentos vencidos/não utilizados.
+            </p>
+            <ol class="list-decimal list-inside text-gray-700 space-y-2 mb-4">
+              <li>Separar o lixo comum do reciclável.</li>
+              <li>
+                Armazenar medicamentos vencidos em local seguro e separado.
+              </li>
+              <li>
+                Seguir o protocolo da Vigilância Sanitária para descarte de
+                medicamentos.
+              </li>
+              <li>Utilizar os coletores específicos para pilhas e baterias.</li>
+              <li>Manter a área de descarte limpa e organizada.</li>
+            </ol>
+            <p class="text-gray-700 leading-relaxed italic text-sm">
+              O descarte incorreto pode gerar multas e danos ambientais.
+            </p>
+          </article>
+        </section>
+
+        <section id="documentos-importantes" class="mb-12 pt-10">
+          <h2
+            class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-2 border-[#FFD200]"
+          >
+            3. Documentos Importantes
+          </h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Aqui você encontrará links e informações sobre documentos
+            essenciais, como manuais, políticas internas e legislação relevante.
+          </p>
+          <ul class="list-disc list-inside text-gray-700 space-y-3">
+            <li>
+              <a href="#" class="text-[#002776] hover:underline"
+                >Manual de Boas Práticas de Farmácia (PDF)</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#002776] hover:underline"
+                >Política de Trocas e Devoluções</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#002776] hover:underline"
+                >Regulamento Interno da Farmácia</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#002776] hover:underline"
+                >Legislação sobre Medicamentos Controlados (ANVISA)</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-[#002776] hover:underline"
+                >Plano de Contingência e Emergência</a
+              >
+            </li>
+          </ul>
+          <div
+            class="mt-8 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg shadow-sm"
+          >
+            <h3 class="text-xl font-semibold text-yellow-800 mb-3">Atenção:</h3>
+            <p class="text-yellow-700">
+              Certifique-se de sempre consultar a versão mais atualizada dos
+              documentos.
+            </p>
+          </div>
+        </section>
+
+        <section id="contato" class="mb-12 pt-10">
+          <h2
+            class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-2 border-[#FFD200]"
+          >
+            4. Contato e Suporte
+          </h2>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            Precisa de ajuda? Entre em contato com as equipes responsáveis.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-[#fff9db] p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-[#002776] mb-3">
+                Suporte de TI / Sistema
+              </h3>
+              <p class="text-[#002776] mb-2">
+                <span class="font-medium">Telefone:</span> (XX) XXXX-XXXX
+              </p>
+              <p class="text-[#002776] mb-2">
+                <span class="font-medium">Email:</span>
+                suporte.ti@[nomedafarmacia].com.br
+              </p>
+              <p class="text-[#002776]">
+                <span class="font-medium">Horário:</span> Segunda a Sexta, 8h às
+                18h
+              </p>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-green-800 mb-3">
+                Gestão / Recursos Humanos
+              </h3>
+              <p class="text-green-700 mb-2">
+                <span class="font-medium">Telefone:</span> (XX) YYYY-YYYY
+              </p>
+              <p class="text-green-700 mb-2">
+                <span class="font-medium">Email:</span>
+                rh@[nomedafarmacia].com.br
+              </p>
+              <p class="text-green-700">
+                <span class="font-medium">Horário:</span> Segunda a Sexta, 9h às
+                17h
+              </p>
+            </div>
+            <div class="bg-[#e0f2fe] p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-[#002776] mb-3">
+                Gostaria de acrescentar algo nesse manual?
+              </h3>
+              <p class="text-[#002776] mb-2">
+                <span class="font-medium">Telefone:</span> (11) 94141-2825
+              </p>
+              <p class="text-[#002776] mb-2">
+                <span class="font-medium">Email:</span> douglasluizsantos@proton.me
+              </p>
+              <p class="text-[#002776]">
+                <span class="font-medium">Horário:</span> Qualquer horário
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-gray-800 text-white p-6 mt-8 rounded-t-lg shadow-inner">
+      <div class="container mx-auto text-center text-sm">
+        <p>
+          &copy; Criado por <a href="https://instagram.com/luiz_001211" target="_blank">Aster</a>. Todos os direitos reservados.
+        </p>
+        <p class="mt-2">Desenvolvido para uso interno.</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

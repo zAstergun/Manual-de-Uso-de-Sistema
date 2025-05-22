@@ -1,0 +1,18 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f3f4f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link.active {
+  background-color: #fff9db; /* amarelo claro */
+  color: #002776; /* azul Ultrafarma */
+  font-weight: 600;
+}
+
+main {
+  min-height: calc(100vh - 128px);
+}
