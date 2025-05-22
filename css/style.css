@@ -7,10 +7,21 @@ html {
   scroll-behavior: smooth;
 }
 
-.nav-link.active {
+/* Estilo para links ativos (o que você já tem) */
+.nav-link.active,
+aside nav ul ul a.active {
+  /* Adicionado para sub-links também */
   background-color: #fff9db; /* amarelo claro */
   color: #002776; /* azul Ultrafarma */
   font-weight: 600;
+}
+
+/* Novo estilo para o hover, que será o mesmo do ativo */
+.nav-link:hover,
+aside nav ul ul a:hover {
+  background-color: #fff9db; /* Cor de fundo do hover/ativo */
+  color: #002776; /* Cor do texto do hover/ativo */
+  font-weight: 600; /* Negrito no hover */
 }
 
 main {
